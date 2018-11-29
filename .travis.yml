@@ -44,6 +44,3 @@ before_install:
 script:
   - script/check-style
   - CC=/usr/bin/gcc-4.9 CXX=/usr/bin/g++-4.9 bazel --output_base=${HOME}/bazel/outbase test //...
-
-notifications:
-  slack: istio-dev:wEEEbaabdP5ieCgDOFetA9nX
